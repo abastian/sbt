@@ -9,5 +9,3 @@ RUN mkdir -p ${SBT_HOME} &&\
 RUN adduser -h /home/builder -D -u 1000 -s /bin/bash -g "Builder" builder
 USER builder
 WORKDIR /home/builder
-RUN ${SBT_HOME}/bin/sbt exit
-
